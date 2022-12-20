@@ -1,0 +1,54 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla_usuarios{
+    width: 70%;
+    border: 1px solid var(--gris);
+}
+
+.titulos{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--gris);
+    height: 25px;
+}
+
+.titulo{
+    width: 229px;
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 24px;
+}
+
+.nombre{
+    width: 15%;
+    margin-left: 10px;
+}
+
+.telefono{
+    width: 23%;
+}
+
+.correo{
+    width: 28%;
+}
+
+.cedula{
+    width: 23%;
+}
+
+.info{
+    display: flex;
+    height: 24px;
+}
+
+.sorteo{
+    display: flex;
+    justify-content: end;
+}
+
+span{
+    color: #0d6efd;
+    font-size: 32px;
+}

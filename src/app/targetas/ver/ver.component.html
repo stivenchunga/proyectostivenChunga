@@ -1,0 +1,27 @@
+<div class="contenedor col-12">
+    <div class="titulo">
+        <h4>Usuarios en <span>{{sala.nombre}}</span></h4>
+    </div>
+    <div class="tabla_usuarios">
+
+        <div class="titulos col-12">
+            <p class="nombre">Nombre</p>
+            <p class="telefono">Telefono</p>
+            <p class="correo">Correo</p>
+            <p class="cedula">Cedula</p>
+        </div>
+
+        <div *ngFor="let usuario of usuarios" class="info col-12">
+            <p class="nombre">{{usuario.nombre}}</p>
+            <p class="telefono">{{usuario.telefono}}</p>
+            <p class="correo">{{usuario.correo}}</p>
+            <p class="cedula">{{usuario.cedula}}</p>
+        </div>
+
+    </div>
+
+    <div class="sorteo mt-2 col-12">
+        <button (click)="sortear()" class="btn btn-primary">Realizar sorteo</button>
+    </div>
+
+</div>

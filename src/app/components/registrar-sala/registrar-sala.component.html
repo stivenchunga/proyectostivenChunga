@@ -1,0 +1,16 @@
+<div class="contenedor_formulario">
+    <h3>Nueva Sala</h3>
+    <form [formGroup]="formularioSala">
+
+        <div>
+            <label >Nombre</label>
+            <input  [disabled]="true" type="text" formControlName="nombre">
+        </div>
+
+        <div>
+            <label>Precio</label>
+            <input type="number" formControlName="precio">
+        </div>
+
+    </form>
+</div>

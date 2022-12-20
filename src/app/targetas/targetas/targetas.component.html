@@ -1,0 +1,38 @@
+
+
+    
+
+    <div class="contenedor-uno">
+
+      
+      
+      <button (click)="agregarSala()"class="fa-plus btn d-flex">
+        <fa-icon class="fa" [icon]="faPlus"></fa-icon> <p> Agregas sala </p>
+      </button>
+      
+      <div *ngFor="let sala of salas" class="card">
+        <div class="card-body">
+
+          <div class="buttons d-flex">  
+            <fa-icon (click)="eliminarUsuario(sala)" class="fa-delete" [icon]="faMinusSquare"></fa-icon>
+            <button (click)="agregarUsuario(sala)"class="btn btn-primary"> <fa-icon class="fa2" [icon]="faPlus"></fa-icon> usuario</button>
+          </div>
+         
+          <div class="content_body">
+            <h5 class="card-title">{{sala.nombre}}</h5>
+            <p class="card-text">Precio: {{sala.precio}}</p>
+          </div>
+        </div>
+        <button (click)="verUsuario(sala)"class="btn btn-ver">Ver</button>
+      </div>
+
+      
+    </div>
+
+    
+    
+    <!-- <div class="contenedor-dos col-11">
+
+    </div> -->
+
+  

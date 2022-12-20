@@ -1,0 +1,41 @@
+.contenedor{
+    width: 95%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.caja-uno{
+    
+}
+
+h1.mt-2 {
+    width: 98%;
+    margin: auto;
+}
+
+
+.tarjetas{
+    overflow-x: auto;
+    overflow-y: clip;    
+}
+
+.targetas::-webkit-scrollbar {
+    background: white !important;
+    width: 5px !important;
+    height: 5px !important;
+}
+  
+.targetas::-webkit-scrollbar-thumb {
+    background: var(--gris) !important;
+    width: 5px !important;
+    border-radius: 5px;
+}
+
+
+.targetas {
+    overflow: auto;
+    margin-top: 26px;
+}
